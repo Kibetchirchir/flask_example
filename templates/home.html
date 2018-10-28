@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        flask project
+    </title>
+</head>
+<body>
+<h1>This is home page</h1><br>
+{% for post in posts %}
+<h1>{{post.Title}}</h1>
+<h1> By {{post.Author}} on {{post.date}}</h1>
+<h4>{{post.contents}}</h4>
+{% endfor %}
+</body>
+</html>
